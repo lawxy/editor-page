@@ -11,10 +11,10 @@ export default defineConfig({
       fileRegex: /.js$|.ts$|.tsx$/,
     }),
   ],
-  // resolve: {
-  //   alias: {
-  //     "@roddan/form-editor":
-  //       "/Users/luoxy/Desktop/code/mine/low-code/es/index.js",
-  //   },
-  // },
+  resolve: {
+    alias: {
+      "@roddan/form-editor":
+        "/Users/luoxy/Desktop/code/mine/form-editor/es/index.js",
+    },
+  },
 });
