@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "analyze": "cross-env ANALYZE=1 umi build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@roddan/form-editor": "^0.0.13",
+    "antd": "^5.19.3",
+    "umi": "^4.3.9"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.0.3"
+  }
+}
