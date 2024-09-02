@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { message } from 'antd'
 import {
   FormEditor,
   Material,
@@ -7,16 +8,19 @@ import {
 } from "@roddan/form-editor";
 
 export default function EditorDesgin() {
-  const [loading, setLoading] = useState(false);
+  const time = useRef(0);
   return (
     <FormEditor
       mode="design"
       actionProp={{
         previewUrl: "/editor-page/form",
         download() {
-          if (loading) return;
-          setLoading(true);
-          console.log("download");
+          const date = +new Date();
+          if(date - time.current < 2000) {
+            return message.warning('正在下载中')
+          };
+          time.current = date;
+
           try {
             const link = document.createElement("a");
             link.href = "https://roddan.cn/editor-assets/page.zip";
@@ -26,8 +30,6 @@ export default function EditorDesgin() {
             document.body.removeChild(link);
           } catch (error) {
             console.error("Error downloading the file:", error);
-          } finally {
-            setLoading(false);
           }
         },
       }}

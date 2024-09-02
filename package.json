@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
-    "@roddan/form-editor": "^0.0.15",
+    "@roddan/form-editor": "^0.0.16",
     "umi": "^4.3.9"
   },
   "devDependencies": {
