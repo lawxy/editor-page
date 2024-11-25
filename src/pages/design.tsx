@@ -6,6 +6,7 @@ import {
   Settings,
   FormCanvas,
 } from "@roddan/form-editor";
+import { customElement } from "./customEl";
 
 export default function EditorDesgin() {
   const time = useRef(0);
@@ -33,6 +34,7 @@ export default function EditorDesgin() {
           }
         },
       }}
+      customElements={[customElement]}
     >
       <Material />
       <FormCanvas />

@@ -1306,10 +1306,10 @@
     rc-resize-observer "^1.3.1"
     rc-util "^5.38.0"
 
-"@roddan/form-editor@^0.0.16":
-  version "0.0.16"
-  resolved "https://registry.npmjs.org/@roddan/form-editor/-/form-editor-0.0.16.tgz#94d09499d47f32754648929ea5e18c0eb7b05f6d"
-  integrity sha512-/c+WJehY3pi0Gh4S36PIPScTFGsruJkNbCXNe1lf0C/QZSWBih1Xvn2ixSteR1BfZC31fGpNA0aoZTjExGYd/A==
+"@roddan/form-editor@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.npmmirror.com/@roddan/form-editor/-/form-editor-0.0.18.tgz#0c5511dfe40733ac509d891f61fc04a8cb57673c"
+  integrity sha512-rf5XSKjLrwyymiDwkCCU2Fcney5b6zrowMC62WWdWk75QCOc6rGeJi2UXvTVLGafVeHKfWi80SPyWQVMSAD2xA==
   dependencies:
     "@ant-design/icons" "^5.3.7"
     "@ant-design/pro-components" "^2.7.15"
